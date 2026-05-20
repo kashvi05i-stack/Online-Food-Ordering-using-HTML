@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie - Online Food Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍔 Foodie Express</h1>
+        <p>Order your favorite food online!</p>
+    </header>
+
+    <main>
+        <section class="menu">
+            	    <h3>Breakfast</h3>
+            <div class="food-item">
+                <h4>Poha</h4>
+                <p>₹30.00</p>
+                <button onclick="addToOrder('Poha', 30.00)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <h4>Idli Sambhar</h4>
+                <p>₹50.00</p>
+                <button onclick="addToOrder('Idli Sambhar', 50.00)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <h4>Medu Vada</h4>
+                <p>₹50.00</p>
+                <button onclick="addToOrder('Medu Vada', 50.00)">Add to Cart</button>
+            </div>
+
+	    <h3>Paratha</h3>
+            <div class="food-item">
+                <h4>Aalu Paratha</h4>
+                <p>₹50.00</p>
+                <button onclick="addToOrder('Aalu Paratha', 50.00)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <h4>Mix Veg Paratha</h4>
+                <p>₹65.00</p>
+                <button onclick="addToOrder('Mix Veg Paratha', 65.00)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <h4>Onion Paratha</h4>
+                <p>₹40.00</p>
+                <button onclick="addToOrder('Onion Paratha', 40.00)">Add to Cart</button>
+            </div>
+
+	    <h3>Hot Drinks</h3>
+            <div class="food-item">
+                <h4>Tea</h4>
+                <p>₹12.00</p>
+                <button onclick="addToOrder('Tea', 12.00)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <h4>Coffee</h4>
+                <p>₹20.00</p>
+                <button onclick="addToOrder('Coffee', 20.00)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <h4>Green Tea</h4>
+                <p>₹15.00</p>
+                <button onclick="addToOrder('Green Tea', 15.00)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="order-summary">
+            <h2>Your Order</h2>
+            <ul id="orderList"></ul>
+            <p><strong>Total:</strong> $<span id="totalAmount">0.00</span></p>
+            <button onclick="placeOrder()" class="place-order">Place Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Foodie Express. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
